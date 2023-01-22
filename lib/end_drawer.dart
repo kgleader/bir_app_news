@@ -34,9 +34,12 @@ class EndDrawer extends StatelessWidget {
                     ),
                   ),
                 ),
+                const Divider(
+                  color: Colors.black38,
+                ),
                 ListTile(
                   title: const Text(
-                    'Profile & Security',
+                    'Login Admin',
                     style: TextStyle(
                       fontSize: 16.0,
                       fontWeight: FontWeight.w600,
@@ -44,9 +47,6 @@ class EndDrawer extends StatelessWidget {
                     ),
                   ),
                   onTap: () {
-                    // Update the state of the app
-                    // ...
-                    // Then close the drawer
                     Navigator.pop(context);
                   },
                   leading: const Icon(
@@ -55,26 +55,8 @@ class EndDrawer extends StatelessWidget {
                     color: Colors.black,
                   ),
                 ),
-                ListTile(
-                  title: const Text(
-                    'Notifications',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.black,
-                    ),
-                  ),
-                  onTap: () {
-                    // Update the state of the app
-                    // ...
-                    // Then close the drawer
-                    Navigator.pop(context);
-                  },
-                  leading: const Icon(
-                    Icons.notifications,
-                    size: 26.0,
-                    color: Colors.black,
-                  ),
+                const Divider(
+                  color: Colors.black38,
                 ),
                 ListTile(
                   title: const Text(
@@ -102,7 +84,7 @@ class EndDrawer extends StatelessWidget {
                 ),
                 ListTile(
                   title: const Text(
-                    'About WelakaOne',
+                    'About company',
                     style: TextStyle(
                       fontSize: 16.0,
                       fontWeight: FontWeight.w600,
@@ -110,8 +92,8 @@ class EndDrawer extends StatelessWidget {
                     ),
                   ),
                   onTap: () {
-                    //Navigator.pushReplacementNamed(context, Routes.about);
-                    //Navigator.popAndPushNamed(context, Routes.app1);
+                    // Navigator.pushReplacementNamed(context, Routes.about);
+                    // Navigator.popAndPushNamed(context, Routes.app1);
                   },
                   leading: const Icon(
                     Icons.info_outline,
@@ -122,18 +104,8 @@ class EndDrawer extends StatelessWidget {
                 const Divider(
                   color: Colors.black38,
                 ),
-                ListTile(
-                  onTap: () {
-                    // Update the state of the app
-                    // ...
-                    // Then close the drawer
-                    Navigator.pop(context);
-                  },
-                  leading: const Icon(
-                    Icons.close,
-                    size: 26.0,
-                    color: Colors.black,
-                  ),
+                const Divider(
+                  color: Colors.black38,
                 ),
                 ListTile(
                   title: const Text(
@@ -152,6 +124,9 @@ class EndDrawer extends StatelessWidget {
                     size: 26.0,
                     color: Colors.black,
                   ),
+                ),
+                const Divider(
+                  color: Colors.black38,
                 ),
               ],
             ),

@@ -4,7 +4,7 @@ import 'home_page.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: BottomNavBar('Жанылыктар'),
+    home: const BottomNavBar('Жанылыктар'),
     theme: ThemeData.light().copyWith(
       canvasColor: Colors.grey,
     ),

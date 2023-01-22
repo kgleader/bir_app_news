@@ -33,32 +33,30 @@ class _BottomNavBarState extends State<BottomNavBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // Below makes the text above title white (=dark) or black (=light)
         title: const Text('Жанылыктар'),
-        // Below makes the AppBar background a desired color
         backgroundColor: const Color(0xff4367b1),
         leading: Builder(
           builder: (context) {
             return IconButton(
-              icon: const Icon(Icons.settings),
+              icon: const Icon(Icons.menu),
               onPressed: () {
                 Scaffold.of(context).openDrawer();
               },
             );
           },
         ),
-        actions: <Widget>[
-          Builder(
-            builder: (context) {
-              return IconButton(
-                icon: const Icon(Icons.person),
-                onPressed: () {
-                  Scaffold.of(context).openEndDrawer();
-                },
-              );
-            },
-          )
-        ],
+        // actions: <Widget>[
+        //   Builder(
+        //     builder: (context) {
+        //       return IconButton(
+        //         icon: const Icon(Icons.person),
+        //         onPressed: () {
+        //           Scaffold.of(context).openEndDrawer();
+        //         },
+        //       );
+        //     },
+        //   ),
+        // ],
         systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       drawer: const Drawer(),
